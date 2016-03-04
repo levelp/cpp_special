@@ -26,3 +26,6 @@
 *.exe
 *.out
 *.app
+
+# AStyle backups
+*.orig
