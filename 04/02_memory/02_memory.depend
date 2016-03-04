@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1457351617 source:c:\cpp_special\04\02_memory\main.cpp
+	<iostream>
+	<conio.h>
+	<malloc.h>
+	<mem.h>
+

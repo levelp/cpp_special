@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1457092425 source:c:\denis\cpp_special\03\05_brackets\main.cpp
+	<iostream>
+
+1457341404 source:c:\cpp_special\03\05_brackets\main.cpp
+	<iostream>
+	<iomanip>
+	<stdio.h>
+
