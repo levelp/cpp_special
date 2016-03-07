@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1457356321 source:c:\cpp_special\04\04_turtle\04_turtle\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<iomanip>
+
