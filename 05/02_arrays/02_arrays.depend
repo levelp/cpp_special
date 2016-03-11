@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1457687427 source:c:\cpp_special\05\02_arrays\main.cpp
+1457694750 source:c:\cpp_special\05\02_arrays\main.cpp
 	<iostream>
 	<math.h>
 	<cmath>
+	<cstring>
 
