@@ -29,3 +29,5 @@
 
 # AStyle backups
 *.orig
+
+.idea
