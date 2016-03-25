@@ -25,6 +25,8 @@
 
 using namespace std;
 
+#define SHOW(x) cout << #x << " = " << x << endl;
+
 // Объявление классов
 // class ИмяКласса {
 //   описание класса: Поля и Методы
@@ -232,6 +234,96 @@ class AnimalGetSet {
   }
 };
 
+/// typedef
+/// =======
+// Метафора, описывающая typedef:
+// ------------------------------
+// В typedef мы пишем определение как если бы мы объявляли переменную
+// только "название переменной" становится именем типа.
+
+// определяем новый тип ulong как unsigned long
+typedef unsigned long ulong;
+
+// l1 и l2 имеют одинаковый тип
+unsigned long l1;
+ulong l2;
+
+// Delphi Record => C/C++ struct
+// Указатели
+int* intPtrVar; // Объявление переменной указателя на int
+typedef int* intPtrTypeName; // тип - указатель на int
+intPtrTypeName intPtr2; // intPtr2 тот же тип что и у intPtrVar
+
+// Определение нового типа для массива
+int arrayVar[10]; // Переменная - массив из 10 элементов типа int
+typedef int arrayTypeName[10]; // "[10]" не входит в название, в название типа входит
+// ТОЛЬКО arrayTypeName
+// Обе переменные имеют одинаковый тип
+arrayTypeName arrayVar2;
+
+int* arrayVarPtr[10]; // Переменная - массив из 10 элементов - указателей на int
+typedef int* arrayTypeNamePtr[10]; // "[10]" не входит в название
+arrayTypeNamePtr arrayVarPtr2;
+
+// type type1 = Integer;
+int var1, var2, *varPtr3;
+typedef int type1, type2, *typePtr3;
+
+// functionReference - тип - ссылка на функцию которая возвращает
+// int и принимает 2 аргумента с типом int
+typedef int (&functionReference)(int, int);
+
+// Функция применяет операцию operation,
+// конкретная реализация которой ещё не определена
+// a - массив целых чисел (массив уже создан и передаётся в готовом виде)
+// size - его размер
+int applyToArray(int a[], int size, functionReference operation) {
+  int res = a[0];
+  for(int i = 1; i < size; i++)
+    res = operation(res, a[i]);
+  return res;
+}
+
+// functionPointer - тип - указатель на функцию которая возвращает
+// int и принимает 2 аргумента с типом int
+typedef int (*functionPointer)(int, int);
+
+// Функция применяет операцию operation,
+// конкретная реализация которой ещё не определена
+int applyToArrayPtr(int a[], int size, functionPointer operation) {
+  int res = a[0];
+  for(int i = 1; i < size; i++)
+    res = operation(res, a[i]);
+  return res;
+}
+
+// Конкретные реализации functionReference
+int sum(int a, int b) {
+  return a + b;
+}
+
+// Multiply - умножение
+int mul(int a, int b) {
+  return a * b;
+}
+
+// Определяем точку и указатель на точку
+typedef struct {
+  double x, y;
+} Point, *pPoint;
+Point* pPtr1;
+pPoint pPtr2;
+
+// В современном C++ можно написать просто вот так:
+struct Point2D {
+  double x, y;
+};
+// Ипсользуем "class" вместо "struct"
+class Point2Dx {
+ public:
+  double x, y;
+};
+
 int main() {
   // Вызываем все 3 функции
   f1();
@@ -242,5 +334,13 @@ int main() {
   Animal a;
   cout << a.name << endl;
   a.name = "Новое имя";
+
+  // Вызов конкретной реализации
+  int A[] = {2, 3, 10, 10};
+  SHOW(applyToArray(A, 4, sum));
+  SHOW(applyToArray(A, 4, mul));
+  SHOW(applyToArrayPtr(A, 4, sum));
+  SHOW(applyToArrayPtr(A, 4, mul));
+
   return 0;
 }
