@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1459500820 source:c:\cpp_special\08\01_modules\main.cpp
+	<iostream>
+
+1459500952 source:c:\cpp_special\08\01_modules\module2.cpp
+	<iostream>
+
+1459500892 source:c:\cpp_special\08\01_modules\module3.cpp
+	<iostream>
+
