@@ -1,6 +1,7 @@
 #include <iostream>
-
-void myFunctionMod3();
+// Вместо: void myFunctionMod3();
+// Подключаю модуль
+#include "module3.h"
 
 using namespace std;
 
