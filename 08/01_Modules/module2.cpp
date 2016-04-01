@@ -9,3 +9,19 @@ void myFunction() {
   cout << "myFunction()" << endl;
   myFunctionMod3();
 }
+
+// Перегрузка функции
+void myFunction(int i) {
+  cout << "myFunction(int i)" << endl;
+  myFunctionMod3();
+}
+
+void myFunction(char c) {
+  cout << "myFunction(char c)" << endl;
+  myFunctionMod3();
+}
+
+void myFunction(string s) {
+  cout << "myFunction(string c)" << endl;
+  myFunctionMod3();
+}

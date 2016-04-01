@@ -1,10 +1,16 @@
 # depslib dependency file v1.0
-1459500820 source:c:\cpp_special\08\01_modules\main.cpp
+1459501049 source:c:\cpp_special\08\01_modules\main.cpp
 	<iostream>
 
-1459500952 source:c:\cpp_special\08\01_modules\module2.cpp
+1459502762 source:c:\cpp_special\08\01_modules\module2.cpp
 	<iostream>
+	"module3.h"
 
-1459500892 source:c:\cpp_special\08\01_modules\module3.cpp
+1459502475 source:c:\cpp_special\08\01_modules\module3.cpp
 	<iostream>
+	"module3.h"
+
+1459502778 c:\cpp_special\08\01_modules\module3.h
+
+1459502740 c:\cpp_special\08\01_modules\subdir\module4.h
 
