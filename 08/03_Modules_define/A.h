@@ -1,0 +1,1 @@
+void A_func();

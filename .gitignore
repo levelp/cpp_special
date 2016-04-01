@@ -31,3 +31,8 @@
 *.orig
 
 .idea
+
+*.dcu
+*.cfg
+*.dof
+*.exe

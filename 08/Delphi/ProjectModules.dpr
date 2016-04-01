@@ -24,5 +24,6 @@ begin
   writeln(u1.login);
   writeln(u2.login);
 
+
   Readln;
 end.

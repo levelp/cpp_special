@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1459503650 source:c:\cpp_special\08\03_modules_define\a.cpp
+	<iostream>
+	"C.h"
+
+1459504309 c:\cpp_special\08\03_modules_define\c.h
+
+1459503992 source:c:\cpp_special\08\03_modules_define\b.cpp
+	<iostream>
+	"C.h"
+	<math.h>
+
+1459503650 source:c:\cpp_special\08\03_modules_define\c.cpp
+	<iostream>
+
+1459503896 source:c:\cpp_special\08\03_modules_define\main.cpp
+	<iostream>
+	"A.h"
+	"B.h"
+
+1459503618 c:\cpp_special\08\03_modules_define\a.h
+
+1459504119 c:\cpp_special\08\03_modules_define\b.h
+	"C.h"
+
