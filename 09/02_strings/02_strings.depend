@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1460375714 source:c:\cpp_special\09\02_strings\main.cpp
+	<iostream>
+	<cstring>
+	<string>
+	<stdexcept>
+	<sstream>
+

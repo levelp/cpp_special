@@ -5,7 +5,7 @@ void C_func();
 
 // Структура, которая хранит координаты точки
 struct Point {
-double x,y;
+  double x, y;
 };
 
 #endif // C_H_INCLUDED
